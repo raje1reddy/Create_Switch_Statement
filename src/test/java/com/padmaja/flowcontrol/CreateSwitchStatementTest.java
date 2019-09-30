@@ -22,7 +22,7 @@ public class CreateSwitchStatementTest {
         CreateSwitchStatement createSwitchStatement = new CreateSwitchStatement();
         int result = createSwitchStatement.getRankBaseOfScore(10);
         System.out.println(result);
-        int expectedresult = 20;
+        int expectedresult = 10;
         assertEquals(expectedresult,result);
     }
     @Test
@@ -30,7 +30,7 @@ public class CreateSwitchStatementTest {
         CreateSwitchStatement createSwitchStatement = new CreateSwitchStatement();
         int result = createSwitchStatement.getRankBaseOfScore(30);
         System.out.println(result);
-        int expectedresult = 20;
+        int expectedresult = 30;
         assertEquals(expectedresult,result);
     }
 
@@ -39,9 +39,26 @@ public class CreateSwitchStatementTest {
         CreateSwitchStatement createSwitchStatement = new CreateSwitchStatement();
         int result = createSwitchStatement.getRankBaseOfScore(40);
         System.out.println(result);
-        int expectedresult = 20;
+        int expectedresult = 40;
         assertEquals(expectedresult,result);
     }
 
+    @Test
+    public void testGetRankBaseOfScore0() {
+        CreateSwitchStatement createSwitchStatement = new CreateSwitchStatement();
+        int result = createSwitchStatement.getRankBaseOfScore(0);
+        System.out.println(result);
+        int expectedresult = 0;
+        assertEquals(expectedresult,result);
+    }
+
+    @Test
+    public void testGetRankBaseOfScore100() {
+        CreateSwitchStatement createSwitchStatement = new CreateSwitchStatement();
+        int result = createSwitchStatement.getRankBaseOfScore(100);
+        System.out.println(result);
+        int expectedresult = 100;
+        assertEquals(expectedresult,result);
+    }
 
 }

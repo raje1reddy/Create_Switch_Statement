@@ -2,7 +2,7 @@ package com.padmaja.flowcontrol;
 
 public class CreateSwitchStatement {
     public int getRankBaseOfScore(int marks) {
-        marks =20;
+        //marks =20;
         switch (marks) {
             case 10:
                 System.out.println(10);
